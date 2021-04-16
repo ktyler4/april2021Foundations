@@ -1,5 +1,7 @@
 nav{
     background-color: blue;
+    display: flex;
+    flex-direction: row;
 }
 
 a{
