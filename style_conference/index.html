@@ -12,17 +12,21 @@
  </head>
 <body>
    <header class="primary-header container group">
-       <section class="container">
+       <section class="container"> <!--remove-->
         <h1 class="logo">
             <a href="index.html">
                 <img src="assets/images/logo-1.png" alt="logo">
             </a>
         </h1>
-       </section>
+       </section><!--remove-->
        
        <h3 class="tagline">August 24 - 26 Omaha, NE</h3>
 
        <nav class="nav primary-nav">
+           <!--Need to have each <a> tag within a set of <li> tags, and all <li> tags within 
+               a set of <ul> tags-->
+            <!--Need to have beginning of comment right after closing <li> tag and ending of 
+                comment right before opening <li> tag-->
            <a href="index.html">Home</a>
            <a href="speakers.html">Speakers</a>
            <a href="schedule.html">Schedule</a>
@@ -32,7 +36,7 @@
 
    </header> 
 
-   <section>
+   <section> <!--Delete lines 39-40-->
        <div class="container">
             <h1></h1>
        </div>
@@ -58,12 +62,13 @@
            <h5>Speakers</h5>
            <a href="speakers.html">
                <img src="assets/images/speaker.jpg" alt="Proffessional">
-                <h3>World-Class Speakers</h3>
+                <h3>World-Class Speakers</h3> 
             </a>
            <p>
                Joining us from all around the world are over twenty fantastic
                speakers, here to share their stories.
-           </p>
+           </p> 
+           <!--You're missing a closing tag for the <section> tag on line 61-->
    <!--
        
         Schedule
@@ -100,6 +105,7 @@
        <small>&copy; Developer Style Conference</small>
 
        <nav class="nav">
+           <!--need to make the same adjustments here as in nav menu at top-->
         <a href="index.html">Home</a>
         <a href="speakers.html">Speakers</a>
         <a href="schedule.html">Schedule</a>
