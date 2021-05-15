@@ -12,10 +12,34 @@
 </head>
 <body>
     <header class="primary-header container group">
+        <h1 class="logo"> <!--lines 65 through 84 in the wrong place-->
+             <a href="index.html">
+                 <img src="assets/images/logo-1.png" alt="logo">
+             </a>
+         </h1>
 
-        <!--Missing <h1> with a class of logo-->
+         <h3 class="tagline">August 24 - 26 Omaha, NE</h3>
+        <nav class="primary-nav"> <!--missing class of "nav"-->
+            <ul>
+                <li><a href="index.html">Home</a></li><!--
+                --><li><a href="speakers.html">Speakers</a></li><!--
+                --><li><a href="schedule.html">Schedule</a></li><!--
+                --><li><a href="venue.html">Venue</a></li><!--
+                --><li><a href="register.html">Register</a></li>
+        </ul>
+        </nav>
+ 
+    </header> <!--Missing <h1> with a class of logo-->
         <!--Missing <a> tag linking to index.html-->
-            <!--missing logo image-->
+            <section class="row-alt"> <!--wrong spot, but already mentioned in lines 22-25 -->
+            <div class="container">
+             <h1>Speakers</h1>
+             <p>
+                We're happy to welcome over twenty speakers to present on the industry's latest technologies. 
+                Prepare for an inspiration extravaganza. 
+             </p>
+            </div>
+            </section>    <!--missing logo image-->
         <!--missing <h3> with class of "tagline" and content of dates-->
         <!--Missing <nav> menu-->
 
@@ -23,18 +47,19 @@
         <!--missing <div> with classes of "lead" and "container"-->
             <!--missing <h1> with content-->
                 <!--missing <p> with content-->
-        <section class="container"> <!--remove-->
             <section class="row">
                 <div class="grid">
                     <section class="speaker" id="vanessa-kasun">
                         <div class="col-2-3">
                             <h2>Vanessa Kasun</h2>
-                            <h5>Lorem ipsum dolor sit amet, equidem appareat ad sit,
-                              pro equidem assueverit </h5> <!--put actual title of talk in-->
+                            <h5>React from Scratch (Building a React App from Ground Up)</h5> <!--put actual title of talk in-->
                             <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
                             <h5>About Vanessa</h5>
-                            <p>Lorem ipsum dolor sit amet, equidem appareat ad sit, 
-                              pro equidem assueverit </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                             Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                             Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                             Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                             Sed aliquet nulla. </p>
                         
                         </div><!--
                         --><aside class="col-1-3">
@@ -49,29 +74,594 @@
                         </aside>
                     </section>
 
-                    <section id="fake-name"> <!--need to add other 23 speakers-->
+                    <section class="speaker" id="joshua-burden">
                         <div class="col-2-3">
-                  ...
+                            <h2>Joshua Burden</h2>
+                            <h5>Core UX Principles</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Joshua</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
                         </div><!--
                         --><aside class="col-1-3">
-                  ...
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/joshua-burden.png" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Joshua Burden Twitter</a></li>
+                                </ul>
+                            </div>
                         </aside>
                     </section>
-                  
+
+                    <section class="speaker" id="david-tarvin">
+                        <div class="col-2-3">
+                            <h2>David Tarvin</h2>
+                            <h5>Designing a Culture of Design</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About David</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/david-tarvin.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">David Tarvin Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="issac-piper">
+                        <div class="col-2-3">
+                            <h2>Issac Piper</h2>
+                            <h5>Lights! Camera! Interaction! Design Inspiration From Filmmakers</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Issac</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/issac-piper.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Issac Piper Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="jennifer-jones">
+                        <div class="col-2-3">
+                            <h2>Jennifer Jones</h2>
+                            <h5>What Designers Can Learn from Parenting</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Jennifer</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/jennifer-jones.jpg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Jennifer Jones Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="shane-barsell">
+                        <div class="col-2-3">
+                            <h2>Shane Barsell</h2>
+                            <h5>Crafty Coding: Generating Knitting Patterns</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Shane</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/shane-barsell.jpg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Shane Barsell Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="jon-larsen">
+                        <div class="col-2-3">
+                            <h2>Jon Larsen</h2>
+                            <h5>Responsive Web Design: Clever Tips and Techniques</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Jon</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/jon-larsen.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Jon Larsen Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="zachary-zuka">
+                        <div class="col-2-3">
+                            <h2>Zachary Zuka</h2>
+                            <h5>Less is More: How Constraints Cultivate Growth</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Zachary</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/zach-zuka.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Zachary Zuka Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="nate-decker">
+                        <div class="col-2-3">
+                            <h2>Nate Decker</h2>
+                            <h5>What's Stopping You?</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Nate</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/nate-decker.jpg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Nate Decker Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="erin-lasiter">
+                        <div class="col-2-3">
+                            <h2>Erin Lasiter</h2>
+                            <h5>The Business of Play</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Erin</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/erin-lesiter.png" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Erin Lasiter Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="melissa-albert">
+                        <div class="col-2-3">
+                            <h2>Melissa Albert</h2>
+                            <h5>Leveling Up with Flexbox</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Melissa</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/melissa-albert.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Melissa Albert Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="damien-alexander">
+                        <div class="col-2-3">
+                            <h2>Damian Alexander</h2>
+                            <h5>Building a Mobile Layout</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Damian</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/damien-alexander.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Damian Alexander Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="staci-beed">
+                        <div class="col-2-3">
+                            <h2>Staci Beed</h2>
+                            <h5>What Designers and Strategists Can Learn from Jon Larson</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Staci</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/staci-beed.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Staci Beed Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="jacob-furengit">
+                        <div class="col-2-3">
+                            <h2>Jacob Furengit</h2>
+                            <h5>What Design Can Teach You About User Experience Design</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Jacob</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/jacob-furengit.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Jacob Furengit Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="louis-anton">
+                        <div class="col-2-3">
+                            <h2>Luis Anton</h2>
+                            <h5>Select This!</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Luis</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/luis-anton.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Luis Anton Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="chenzo-lu">
+                        <div class="col-2-3">
+                            <h2>Chenzo Lu</h2>
+                            <h5>Teaching Our CSS to Play Nice</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Chenzo</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/chenzo-lu.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Chenzo Lu Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="molly-reagan">
+                        <div class="col-2-3">
+                            <h2>Molly Reagan</h2>
+                            <h5>So You Want to be Magical?</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Molly</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/molly-reagan.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Molly Reagan Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="bill-salazar">
+                        <div class="col-2-3">
+                            <h2>Bill Salazar</h2>
+                            <h5>Excellent Tacos are not Created in a Vacuum</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Bill</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/bill-salazar.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Bill Salazar Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="jordan-ruenbern">
+                        <div class="col-2-3">
+                            <h2>Jordan Ruenbern</h2>
+                            <h5>Designing Deals: How Good Design Drives Sales</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Jordan</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/jordan.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Jordan Ruenbern Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="heather-mason">
+                        <div class="col-2-3">
+                            <h2>Heather Mason</h2>
+                            <h5>Death to Wireframes: Long Live Rapid Prototyping</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Heather</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/heather-mason.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Heather Mason Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="keri-janson">
+                        <div class="col-2-3">
+                            <h2>Keri Janson</h2>
+                            <h5>Making Remote Development Work</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Keri</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/keri-janson.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Keri Janson Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="jack-michel">
+                        <div class="col-2-3">
+                            <h2>Dr. Jack Michel</h2>
+                            <h5>Designing to Learn</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Jack</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/dr-jack-michel.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Dr. Jack Michel Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="tommy-sexton">
+                        <div class="col-2-3">
+                            <h2>Tommy Sexton</h2>
+                            <h5>Creating HTML Emails Can Be Fun</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Tommy</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/tommy-sexton.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Tommy Sexton Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section class="speaker" id="kyle-smith">
+                        <div class="col-2-3">
+                            <h2>Kyle Smith</h2>
+                            <h5>Heavy Metal Coding</h5> <!--put actual title of talk in-->
+                            <p>Lorem ipsum dolor sit amet, equidem appareat.</p>    
+                            <h5>About Kyle</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse sapien massa, efficitur id odio id, semper ultrices ipsum. 
+                                Maecenas sed velit imperdiet, sodales sapien vel, tristique eros. 
+                                Suspendisse ultrices facilisis posuere. Integer sollicitudin tortor nec auctor rutrum. 
+                                Sed aliquet nulla. </p>
+                        
+                        </div><!--
+                        --><aside class="col-1-3">
+                            <div class="speaker-info">
+
+                                <img src="assets/images/speakers/kyle-smith.jpeg" alt="">
+
+                                <ul>
+                                    <li><a href="https://twitter.com">Kyle Smith Twitter</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
                       
                 </div>
               </section>
-               
-        <h1 class="logo"> <!--lines 65 through 84 in the wrong place-->
-             <a href="index.html">
-                 <img src="assets/images/logo-1.png" alt="logo">
-             </a>
-         </h1>
-        </section> <!--remove-->
         
-        <h3 class="tagline">August 24 - 26 Omaha, NE</h3>
+        
  
-        <nav class="primary-nav"> <!--missing class of "nav"-->
+        
+
+
+
+    <footer class="primary-footer container group">
+        <small>&copy; Developer Style Conference</small>
+ 
+        <nav> <!--missing class of "nav"--><!--make adjustments mentioned in index.html-->
             <ul>
                 <li><a href="index.html">Home</a></li><!--
                 --><li><a href="speakers.html">Speakers</a></li><!--
@@ -79,26 +669,6 @@
                 --><li><a href="venue.html">Venue</a></li><!--
                 --><li><a href="register.html">Register</a></li>
         </ul>
-        </nav>
- 
-    </header> 
-
-    <section> <!--wrong spot, but already mentioned in lines 22-25 -->
-        <div class="container">
-             <h1></h1>
-        </div>
-    </section>
-
-    <footer class="primary-footer container group">
-        <small>&copy; Developer Style Conference</small>
- 
-        <nav> <!--missing class of "nav"-->
-            <!--make adjustments mentioned in index.html-->
-         <a href="index.html">Home</a>
-         <a href="speakers.html">Speakers</a>
-         <a href="schedule.html">Schedule</a>
-         <a href="venue.html">Venue</a>
-         <a href="register.html">Register</a>
      </nav>
  
     </footer>

@@ -12,30 +12,36 @@
 </head>
 <body>
     <header class="primary-header container group">
-        <section class="container"><!--remove-->
          <h1 class="logo">
              <a href="index.html">
                  <img src="assets/images/logo-1.png" alt="logo">
              </a>
          </h1>
-        </section><!--remove-->
         
         <h3 class="tagline">August 24 - 26 Omaha, NE</h3>
  
-        <nav class="primary-nav"> <!--missing class of "nav"-->
-            <!--make adjustments mentioned on index.html-->
-            <a href="index.html">Home</a>
-            <a href="speakers.html">Speakers</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="venue.html">Venue</a>
-            <a href="register.html">Register</a>
+        <nav class="primary-nav nav"> <!--missing class of "nav"-->
+            <ul>
+                <li><a href="index.html">Home</a></li><!--
+                --><li><a href="speakers.html">Speakers</a></li><!--
+                --><li><a href="schedule.html">Schedule</a></li><!--
+                --><li><a href="venue.html">Venue</a></li><!--
+                --><li><a href="register.html">Register</a></li>
+            </ul>
         </nav>
  
     </header>
 
-    <section> <!--Should have a class of "row-alt"-->
-        <div class="container"> <!--Should also have a class of "lead"-->
-             <h1></h1> <!--I'll give you the content for this-->
+    <section class="row-alt"> <!--Should have a class of "row-alt"-->
+        <div class="container lead"> <!--Should also have a class of "lead"-->
+             <h1>
+                Register 
+             </h1>
+             <p>
+                Each year we strive to reach and teach developers nation wide, 
+                and this year we'd love it for you to join us. 
+                Conference passes only cost $99, one of the best values you'll find.
+             </p> <!--I'll give you the content for this-->
              <!--Need a set of <p> tags here - I'll give you the content-->
         </div>
     </section>
@@ -101,10 +107,10 @@
                         Number of passes
                         <select name="quantity" required>
                             <option value="1" selected>1</option>
-                            <option value="2"></option> <!--Missing Content for options 2-5-->
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
+                            <option value="2">2</option> <!--Missing Content for options 2-5-->
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </label>
                     <label for="">
@@ -122,13 +128,14 @@
     <footer class="primary-footer container group">
         <small>&copy; Developer Style Conference</small>
  
-        <nav> <!--missing class of "nav"-->
-            <!--Make adjustments mentioned in index.html-->
-         <a href="index.html">Home</a>
-         <a href="speakers.html">Speakers</a>
-         <a href="schedule.html">Schedule</a>
-         <a href="venue.html">Venue</a>
-         <a href="register.html">Register</a>
+        <nav class="nav"> <!--missing class of "nav"-->
+            <ul>
+                <li><a href="index.html">Home</a></li><!--
+                --><li><a href="speakers.html">Speakers</a></li><!--
+                --><li><a href="schedule.html">Schedule</a></li><!--
+                --><li><a href="venue.html">Venue</a></li><!--
+                --><li><a href="register.html">Register</a></li>
+            </ul>
      </nav>
  
     </footer>
