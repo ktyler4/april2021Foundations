@@ -1,6 +1,5 @@
 html {
     font-family: "Open Sans", sans-serif;
-    /*font-size: x-large;*/
     font-size: 16pt;
 }
 
@@ -55,12 +54,12 @@ nav > a:hover {
 
 
 #apps:before {
-    background-image: url("../images/apps.jpg");
+    background-image: url("../images/apps.jpeg");
 }
 
 
 #services:before {
-    background-image: url("../images/www.jpg");
+    background-image: url("../images/www.jpeg");
 }
 
 
@@ -180,7 +179,7 @@ article:before {
 
 
 #about:before {
-    background-image: url('../images/c64.jpg');
+    background-image: url('../images/c64.jpeg');
 }
 
 
@@ -190,19 +189,19 @@ article:before {
 
 
 #apps h1 {
-	grid-area: header; /* header area */
+	grid-area: header;
 	text-align: center;
 }
 #apps > .content {
-	grid-area: main; /* main area */
+	grid-area: main;
 }
 #apps > div:nth-of-type(1) {
-	grid-area: sidebar-left; /* sidebar-left area */
+	grid-area: sidebar-left;
 	padding-right: 1.5em;
 	text-align: right;
 }
 #apps > div:nth-of-type(3) {
-	grid-area: sidebar-right; /* sidebar-right area */
+	grid-area: sidebar-right;
 	text-align: left;
 	padding-left: 1.5em;
 }
@@ -303,73 +302,31 @@ article:before {
 }
 
 
-/*
-
-
-
-
-All the cube faces start out stacked on top of each other in the same 2D space.
-For the front face (the face that initially faces the viewer) we just need to
-move it forward (toward the viewer) half of size of the cube.
-*/
 .stage .front {
     transform: translateZ(11ch);
 }
 
 
-
-
-/*
-For the back face, we rotate it 180 degrees (so the "out" side is facing away from us initially),
-then move it in the z-axis. Note that the order of these operations matches the order
-you put them in the CSS. Since we have rotated the back face 180 degrees, the Z-axis is now also
-reversed! So positive translateZ for this back face is moving it further behind the screen,
-and negative would be toward the viewer! How crazy is that?!
-By moving it half the size of the cube away, combined with moving the front half the size towards us,
-we make a complete cube (front and back so far).
-*/
 .stage .back {
     transform: rotateY(180deg) translateZ(11ch);
 }
 
 
-
-
-/*
-The top rotates around the X-axis, so its translateZ is now up! The rotation is positive
-so that the top faces up.
-*/
 .stage .top {
     transform: rotateX(90deg) translateZ(11ch);
 }
 
 
-
-
-/*
-The bottom rotates around the X-axis in the negative direction, so its translateZ is now down!
-Just like with the front and back, we have now set the top and bottom in place.
-*/
 .stage .bottom {
     transform: rotateX(-90deg) translateZ(11ch);
 }
 
 
-
-
-/*
-Rotate the left side so that it faces out to the left, so its translateZ is now pointing left.
-*/
 .stage .left {
     transform: rotateY(-90deg) translateZ(11ch);
 }
 
 
-
-
-/*
-Rotate the right side so that it faces out to the right, so its translateZ is now pointing right.
-*/
 .stage .right {
     transform: rotateY(90deg) translateZ(11ch);
 }
