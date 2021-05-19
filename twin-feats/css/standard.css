@@ -1,5 +1,6 @@
 html {
     font-family: "Open Sans", sans-serif;
+    /*font-size: x-large;*/
     font-size: 16pt;
 }
 
@@ -16,40 +17,50 @@ nav {
     justify-content: space-evenly;
     padding: 0.25em;
     font-size: larger;
+    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 5;
 }
+
+
+nav > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .5s;
+}
+
 
 nav > a:hover {
     color: cyan;
 }
 
-nav > a {
-    transition: color .5s;
+
+#home {
+    background-image: url("../images/background.jpg");
+    left: 0;
 }
 
-#home img.logo:hover {
-    transform: rotate(360deg);
-}
 
 #home img.logo {
     transition: transform 1s;
 }
 
 
-a {
-    color: white;
-    text-decoration: none;
-    padding: 00.25em;
+#home img.logo:hover {
+    transform: rotate(360deg);
 }
 
 
-#home {
-    background-image: url("../images/background.jpg");
-    text-align: center;
-    left: 0;
+#apps:before {
+    background-image: url("../images/apps.jpg");
+}
+
+
+#services:before {
+    background-image: url("../images/www.jpg");
 }
 
 
@@ -81,11 +92,10 @@ a {
 
 
 .photobox figure {
-    font-size: .6em;
-    margin: 0;
+    margin-left: 0;
     margin-top: .3rem;
     margin-right: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 
@@ -94,10 +104,6 @@ article {
     padding-right: 20vw;
     padding-top: 4rem;
     box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -109,55 +115,121 @@ article {
 }
 
 
+article:target {
+    left: 0;
+}
+
+
+article:target ~ #home {
+    left: -100vw;
+}
+
+
+article + img {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 3;
+}
+
+
+@keyframes animate-img {
+    0% {
+        left: -100vw;
+    }
+    40% {
+        left: 0;
+    }
+    60% {
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
+
+article:target + img {
+    animation-name: animate-img;
+    animation-duration: 1.5s;
+}
+
+
 .photobox > :last-child {
     text-align: left;
 }
 
 
 article:before {
-
-    content: " ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: 0.1;
+    opacity: 0.2;
     z-index: -1;
 }
 
 
 #about:before {
-    background-image: url("../images/c64.jpeg");
+    background-image: url('../images/c64.jpg');
 }
 
-#services h2{
-    font-size: 1.25em;
-}
 
-#services p{
+#services p, #apps p {
     text-align: left;
 }
 
-#services::before {
-    background-image: url("../images/www.jpeg");
+
+#apps h1 {
+	grid-area: header; /* header area */
+	text-align: center;
+}
+#apps > .content {
+	grid-area: main; /* main area */
+}
+#apps > div:nth-of-type(1) {
+	grid-area: sidebar-left; /* sidebar-left area */
+	padding-right: 1.5em;
+	text-align: right;
+}
+#apps > div:nth-of-type(3) {
+	grid-area: sidebar-right; /* sidebar-right area */
+	text-align: left;
+	padding-left: 1.5em;
+}
+#apps > .sidebar > img {
+	height: 20vh;
+	margin-bottom: 0.5em;
 }
 
-#apps::before {
-    background-image: url(../images/apps.jpeg);
+
+#apps {
+	display: grid;
+	text-align: left;
+	grid-template-areas: 
+		'header header header header header header'
+		'sidebar-left main main main main sidebar-right'
+		'sidebar-left main main main main sidebar-right'
+		'sidebar-left main main main main sidebar-right'
+		'sidebar-left main main main main sidebar-right'
+		'sidebar-left main main main main sidebar-right';
 }
 
-#apps p{
-    text-align: left;
-}
 
 #contact:before {
     background-image: url('../images/contactbg.jpg');
 }
+
+
 
 
 #contact img {
@@ -166,7 +238,6 @@ article:before {
     padding-bottom: 0.25em;
     padding-right: 0.25em;
 }
-
 
 
 #contact > div {
@@ -184,6 +255,7 @@ article:before {
     text-decoration: underline;
 }
 
+
 #contact a img {
     transition: transform .25s;
 }
@@ -193,47 +265,158 @@ article:before {
     transform: scale(1.2, 1.2);
 }
 
-@keyframes move-it {
-    from {
-        top: 0px;
-    }
-    to {
-        top: 200px;
-    }
 
+.stage {
+    perspective: 1600px;
+    perspective-origin: 50% 0;
+    width: 22ch;
+    margin-right: 1.5em;
+    font-size: .6em;
+    margin-bottom: 2em;
 }
 
-@keyframes animate-img {
+
+.stage .cube {
+    width: 22ch;
+    height: 22ch;
+    transform-style: preserve-3d;
+
+
+    position: relative;
+    animation: rotate 10s infinite linear;
+
+
+    animation-play-state: paused;
+}
+
+
+.cube > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+
+.cube:hover {
+    animation-play-state: running !important;
+}
+
+
+/*
+
+
+
+
+All the cube faces start out stacked on top of each other in the same 2D space.
+For the front face (the face that initially faces the viewer) we just need to
+move it forward (toward the viewer) half of size of the cube.
+*/
+.stage .front {
+    transform: translateZ(11ch);
+}
+
+
+
+
+/*
+For the back face, we rotate it 180 degrees (so the "out" side is facing away from us initially),
+then move it in the z-axis. Note that the order of these operations matches the order
+you put them in the CSS. Since we have rotated the back face 180 degrees, the Z-axis is now also
+reversed! So positive translateZ for this back face is moving it further behind the screen,
+and negative would be toward the viewer! How crazy is that?!
+By moving it half the size of the cube away, combined with moving the front half the size towards us,
+we make a complete cube (front and back so far).
+*/
+.stage .back {
+    transform: rotateY(180deg) translateZ(11ch);
+}
+
+
+
+
+/*
+The top rotates around the X-axis, so its translateZ is now up! The rotation is positive
+so that the top faces up.
+*/
+.stage .top {
+    transform: rotateX(90deg) translateZ(11ch);
+}
+
+
+
+
+/*
+The bottom rotates around the X-axis in the negative direction, so its translateZ is now down!
+Just like with the front and back, we have now set the top and bottom in place.
+*/
+.stage .bottom {
+    transform: rotateX(-90deg) translateZ(11ch);
+}
+
+
+
+
+/*
+Rotate the left side so that it faces out to the left, so its translateZ is now pointing left.
+*/
+.stage .left {
+    transform: rotateY(-90deg) translateZ(11ch);
+}
+
+
+
+
+/*
+Rotate the right side so that it faces out to the right, so its translateZ is now pointing right.
+*/
+.stage .right {
+    transform: rotateY(90deg) translateZ(11ch);
+}
+
+
+@keyframes rotate {
     0% {
-        left: -100vw;
+        transform: rotateY(0deg);
+
+
     }
-    40% {
-        left: 0;
+    5% {
+        transform: rotateY(90deg);
+
+
     }
-    60% {
-        left: 0;
+    25% {
+        transform: rotateY(90deg);
+
+
+    }
+    30% {
+        transform: rotateY(180deg);
+
+
+    }
+    50% {
+        transform: rotateY(180deg);
+
+
+    }
+    55% {
+        transform: rotateY(270deg);
+
+
+    }
+    75% {
+        transform: rotateY(270deg);
+
+
+    }
+    80% {
+        transform: rotateY(360deg);
+
+
     }
     100% {
-        left: -100vw;
+        transform: rotateY(360deg);
     }
-}
-
-article:target + img {
-    animation-name: animate-img;
-    animation-duration: 1.5s;
-}
-
-article + img {
-
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: 3;
-}
-
-article:target {
-    left: 0;
 }
