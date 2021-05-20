@@ -1,0 +1,51 @@
+#mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0.5em;
+    left: 0.5em;
+    height: 5vh;
+    width: 5vh;
+    z-index: 10;
+    padding: 0;
+}
+
+
+#mobile-nav > img {
+    width: 100%;
+}
+
+
+#nav:target {
+	width: 12ch;
+	height: 7em;
+	padding: 0.2em;
+}
+
+nav {
+
+    flex-direction: column;
+    top: calc(5vh + .5em);
+    max-width: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+    
+    
+ nav > a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+    
+    
+nav > a:first-child {
+    padding-top: 0.5em;
+}
+    
+    
+nav > a:last-child {
+    padding-bottom: 0.5em;
+}
+
+#mobile-nav, #mobile-trigger {
+    display: none;
+}
