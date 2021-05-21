@@ -12,6 +12,7 @@
 
 #mobile-nav > img {
     width: 100%;
+    height: 100%;
 }
 
 
@@ -25,12 +26,11 @@ nav {
 
     flex-direction: column;
     top: calc(5vh + .5em);
-    max-width: 0;
+    width: 0;
     overflow: hidden;
     transition: all .5s;
 }
-    
-    
+       
  nav > a {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -46,6 +46,104 @@ nav > a:last-child {
     padding-bottom: 0.5em;
 }
 
-#mobile-nav, #mobile-trigger {
-    display: none;
+.logo {
+    width: 40vw;
+    height: auto;
+}
+
+article {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.2rem;
+    padding-top: 5vw;
+    height: auto;
+    min-height: 100vh;
+    position: absolute;
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.vertical-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tagline {
+    white-space: nowrap;
+}
+
+#bonus {
+    display: block;
+    margin-top: 3em;
+}
+
+.stage {
+
+    width: 100%;
+}
+
+.stage .cube {
+        width: 60vw;
+        height: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        animation-delay: 3s;
+}
+
+.photobox {
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.photobox img {
+    height: 60vw;
+    width: 60vw;
+    left: 50%;
+}
+
+
+.stage .cube {
+    width: 60vw;
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.stage .front {
+    transform: translateX(-50%) translateZ(30vw);
+}
+
+
+.stage .back {
+    transform: translateX(-50%) rotateY(180deg) translateZ(30vw);
+}
+
+
+.stage .top {
+    transform: translateX(-50%) rotateX(90deg) translateZ(30vw);
+}
+
+
+.stage .bottom {
+    transform: translateX(-50%) rotateX(-90deg) translateZ(30vw);
+}
+
+
+.stage .left {
+    transform: translateX(-50%) rotateY(-90deg) translateZ(30vw);
+}
+
+
+.stage .right {
+    transform: translateX(-50%) rotateY(90deg) translateZ(30vw);
+}
+
+#about:target .cube {
+    animation-play-state: running;
 }

@@ -64,7 +64,7 @@ nav > a:hover {
 
 
 .logo {
-    width: 9ch;
+    height: 40vh;
 }
 
 
@@ -86,7 +86,7 @@ nav > a:hover {
 
 
 .photobox img {
-    width: 22ch;
+    height: 20vh;
 }
 
 
@@ -266,7 +266,6 @@ article:before {
 
 
 .stage {
-    perspective: 1600px;
     perspective-origin: 50% 0;
     width: 22ch;
     margin-right: 1.5em;
@@ -276,15 +275,11 @@ article:before {
 
 
 .stage .cube {
-    width: 22ch;
-    height: 22ch;
+    width: 20vh;
+    height: 20vh;
     transform-style: preserve-3d;
-
-
     position: relative;
     animation: rotate 10s infinite linear;
-
-
     animation-play-state: paused;
 }
 
@@ -377,3 +372,8 @@ article:before {
         transform: rotateY(360deg);
     }
 }
+
+#mobile-nav, #mobile-trigger, #bonus {
+    display: none;
+}
+
