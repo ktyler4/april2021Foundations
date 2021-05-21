@@ -377,3 +377,7 @@ article:before {
     display: none;
 }
 
+#mobile-nav, #mobile-trigger, #bonus, .bonus-img {
+    display: none;
+
+}

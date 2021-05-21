@@ -147,3 +147,22 @@ figcaption {
 #about:target .cube {
     animation-play-state: running;
 }
+
+.bonus-img {
+    margin-top: 5vh;
+    display: block;
+    width: 100%;
+}
+
+#contact > div {
+    top: calc(4vh + 3.5em);
+
+}
+
+#apps {
+    display: block;
+}
+
+#apps > .sidebar {
+    display: none;
+}
