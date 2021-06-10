@@ -1,0 +1,86 @@
+html, body {
+	margin: 0;
+	font-family: Poppins, sans-serif;
+	font-size: 2vh;
+    color: white;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: .5em;
+	color: white;
+	background: #000070;
+}
+
+nav {
+	margin-right: 10vw;
+}
+
+header > span {
+	margin-left: 10vw;
+	height: 1em;
+	line-height: 100%;
+	vertical-align: middle;
+	margin-top: .25em;
+	white-space: pre;
+}
+
+nav > a {
+	margin-left: 5vh;
+	font-size: 0.8rem;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ff00cc;
+}
+
+nav > a > i {
+	position: relative;
+	top: -0.25em;
+	left: -0.25em;
+}
+
+body, article {
+	background-image: url(../images/hero_img2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+article > h1 {
+	padding-top: 30vh;
+	margin: 0;
+	font-family: League Script, cursive;
+	font-size: 6rem;
+}
+
+article > div {
+	margin-top: 4vh;
+	margin-bottom: 10vh;
+	text-align: center;
+	font: 1.5rem;
+}
+
+article > button > a {
+	background: #ff00cc;
+	border-radius: 1.5em;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	padding-right: 2em;
+	padding-left: 2em;
+	text-decoration: none;
+	color: white;
+}
+
+article > button > a > i {
+	margin-left: 1em;
+}
