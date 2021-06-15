@@ -1,0 +1,54 @@
+body, html, .container {
+	height: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: .5em;
+	color: white;
+	background: #EB5635;
+}
+
+nav {
+	margin-right: 10vw;
+}
+
+nav > a {
+	margin-left: 5vh;
+	font-size: 0.8rem;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ff00cc;
+}
+
+.diesel-bg {
+	background-image: url(../images/diesel-tuning.jpg);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gas-bg {
+	background-image: url(../images/gas-tuning.jpg);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.power-bg {
+	background-image: url(../images/powersports.jpg);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
