@@ -1,5 +1,7 @@
-body, html, .container {
+body, html {
 	height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -17,6 +19,7 @@ header {
 
 header > span {
 	font-size: 2rem;
+    padding-left: 50px;
 }
 
 nav {
@@ -34,114 +37,54 @@ nav a:hover {
 	color: cyan;
 }
 
-.diesel-bg {
-	background-image: url(../images/diesel-tuning.jpg);
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.diesel {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/diesel-tuning.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: table;
 }
 
-.gas-bg {
-	background-image: url(../images/gas-tuning.jpg);
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.gas {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/gas-tuning.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: table;
 }
 
-.power-bg {
-	background-image: url(../images/powersports.jpg);
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.power {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/powersports.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: table;
 }
 
-.diesel-content {
-	position: relative;
-	top: 50%;
-	left: 50%;
+ h1 {
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    display: table-cell;
 }
 
-.diesel-content > h1 {
-	font-size: 2.5em;
-	color: white;
+button {
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
 }
-
-.diesel-content > button {
-	border-radius: 20px;
-	background-color: #EB5635;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-.diesel-content > button:hover {
-	color: cyan;
-}
-
-.gas-content {
-	position: relative;
-	top: 50%;
-	left: 50%;
-}
-
-.gas-content > h1 {
-	font-size: 2.5em;
-	color: white;
-}
-
-.gas-content > button {
-	border-radius: 20px;
-	background-color: #EB5635;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-.gas-content > button:hover {
-	color: cyan;
-}
-
-.power-content {
-	position: relative;
-	top: 50%;
-	left: 50%;
-}
-
-.power-content > h1 {
-	font-size: 2.5em;
-	color: white;
-}
-
-.power-content > button {
-	border-radius: 20px;
-	background-color: #EB5635;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-.power-content > button:hover {
-	color: cyan;
-}
-
 
 
 
