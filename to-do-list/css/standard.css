@@ -1,0 +1,44 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+body{
+    margin: 0 auto;
+    background-color: blue;
+    max-width: 500px;
+}
+
+.to-do{
+    margin-top: 10px;
+    background-color: yellow;
+    color: navy;
+    border: 3px dashed navy;
+    padding: .5em;
+    box-sizing: border-box;
+    font-size: 25pt;
+}
+
+input{
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 0 14px 4px;
+    color: navy;
+}
+
+input:focus{
+    outline: none;
+}
+li{
+    text-align: left;
+    list-style: none;
+    font-size: 40px;
+    color: white;
+}
+li:hover{
+    text-decoration: line-through;
+}
